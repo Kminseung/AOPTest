@@ -16,6 +16,9 @@ public class App {
 		// 서비스 실행
 		ProductVo vo = ps.findProduct("Notebook");
 		System.out.println("Found: " + vo);
+		
+		// 예외 발생
+		ProductVo vo2 = ps.findProduct(null);
 	}
 
 }
